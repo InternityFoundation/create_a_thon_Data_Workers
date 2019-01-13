@@ -45,9 +45,14 @@ public class MainActivity extends Activity {
                     f[i][0]=Float.parseFloat(e1.getText().toString());
                     f[i][1]=Float.parseFloat(e2.getText().toString());
                     f[i][2]=Float.parseFloat(e3.getText().toString());
+                    e1.setText("");
+                    e2.setText("");
+                    e3.setText("");
                     set(++i);
-                    if(i==9)
+                    if(i==9){
                         b2.setClickable(true);
+                        b1.setClickable(false);
+                    }
                 }
             }
         });
